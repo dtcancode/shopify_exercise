@@ -28,7 +28,8 @@ def time_input_angle_output(hours_and_minutes_input):
 
     minute_degree = minute_int * 6
 
-    hour_degree = hour_degree + minute_degree * .083333333
+    # optional: account for how many degrees the hour hand moves every minute
+    # hour_degree = hour_degree + minute_degree * .083333333
     # print(round(hour_degree, 1))
 
     if abs(hour_degree - minute_degree) >= 180:
